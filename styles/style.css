@@ -98,6 +98,16 @@
     cursor: pointer;
 }
 
+.header__theme-menu-button:focus {
+    outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+    outline: none;
+    text-decoration: underline;
+    border: none;
+}
+
 .header__theme-menu-button_active {
     border: 1px solid var(--header-color);
 }
@@ -287,4 +297,24 @@
 
 .images__street {
     grid-area: street;
+}
+
+.link {
+    color: var(--main-text-color);
+    text-shadow: 1px 1px 0 var(--accent-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+.link:focus {
+    outline: none;
+}
+
+.link:focus-visible {
+    outline: none;
+    border: 1px solid var(--main-text-color);
 }
